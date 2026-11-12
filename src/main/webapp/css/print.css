@@ -1,0 +1,11 @@
+body { font: 12pt Georgia, "Times New Roman", serif; color: #000; margin: 2cm; }
+.print-head h1 { font-size: 18pt; margin: 0; }
+.print-head h2 { font-size: 14pt; font-weight: normal; margin: 4pt 0 16pt; }
+table.payslip { border-collapse: collapse; width: 100%; }
+table.payslip th { text-align: left; font-weight: normal; padding: 3pt 0; }
+table.payslip td { padding: 3pt 0; }
+table.payslip .num { text-align: right; }
+table.payslip tr.section th { font-weight: bold; padding-top: 12pt; border-bottom: 1px solid #000; }
+table.payslip tr.total th, table.payslip tr.total td { font-weight: bold; border-top: 2px solid #000; }
+.small { font-size: 9pt; margin-top: 24pt; }
+@media print { body { margin: 0; } }

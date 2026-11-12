@@ -1,0 +1,5 @@
+<div class="subnav">
+    <a href="${ctx}/admin/taxes" class="${adminTab == 'taxes' ? 'active' : ''}">Tax &amp; rates</a>
+    <a href="${ctx}/admin/users" class="${adminTab == 'users' ? 'active' : ''}">Users</a>
+    <a href="${ctx}/admin/audit" class="${adminTab == 'audit' ? 'active' : ''}">Audit log</a>
+</div>

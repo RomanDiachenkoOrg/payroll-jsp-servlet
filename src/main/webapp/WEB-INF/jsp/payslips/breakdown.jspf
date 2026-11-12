@@ -1,0 +1,20 @@
+<%-- Shared payslip breakdown table; expects "payslip" and "employee" request attributes. --%>
+<table class="payslip" id="payslip-breakdown">
+    <tr><th>Employee</th><td>${payslip.employeeNo} &ndash; <c:out value="${payslip.employeeName}"/></td></tr>
+    <tr><th>Department</th><td><c:out value="${payslip.departmentName}"/></td></tr>
+    <tr><th>Job title</th><td><c:out value="${employee.jobTitle}"/></td></tr>
+    <tr><th>Pay period</th><td><fmt:formatDate value="${payslip.periodStart}" pattern="yyyy-MM-dd"/> &ndash; <fmt:formatDate value="${payslip.periodEnd}" pattern="yyyy-MM-dd"/></td></tr>
+    <tr><th>Pay date</th><td><fmt:formatDate value="${payslip.payDate}" pattern="yyyy-MM-dd"/></td></tr>
+    <c:if test="${payslip.regularHours > 0}">
+        <tr><th>Hours</th><td>${payslip.regularHours} regular, ${payslip.overtimeHours} overtime</td></tr>
+    </c:if>
+    <tr class="section"><th colspan="2">Earnings</th></tr>
+    <tr><th>Gross pay</th><td class="num"><fmt:formatNumber value="${payslip.gross}" type="currency" currencyCode="USD"/></td></tr>
+    <tr class="section"><th colspan="2">Deductions</th></tr>
+    <tr><th>Income tax</th><td class="num"><fmt:formatNumber value="${payslip.incomeTax}" type="currency" currencyCode="USD"/></td></tr>
+    <tr><th>Social contribution</th><td class="num"><fmt:formatNumber value="${payslip.social}" type="currency" currencyCode="USD"/></td></tr>
+    <tr><th>Pension</th><td class="num"><fmt:formatNumber value="${payslip.pension}" type="currency" currencyCode="USD"/></td></tr>
+    <tr><th>Other deductions</th><td class="num"><fmt:formatNumber value="${payslip.otherDeductions}" type="currency" currencyCode="USD"/></td></tr>
+    <tr><th>Total deductions</th><td class="num"><fmt:formatNumber value="${payslip.totalDeductions}" type="currency" currencyCode="USD"/></td></tr>
+    <tr class="total"><th>Net pay</th><td class="num" id="net-pay"><fmt:formatNumber value="${payslip.net}" type="currency" currencyCode="USD"/></td></tr>
+</table>

@@ -1,0 +1,106 @@
+/* Acme Payroll */
+body { margin: 0; font: 13px/1.4 Verdana, Arial, Helvetica, sans-serif; color: #222; background: #f2f2f2; }
+a { color: #1a5a96; }
+h1 { font-size: 20px; margin: 0 0 12px; }
+h2 { font-size: 15px; margin: 20px 0 8px; color: #333; }
+h3 { font-size: 13px; margin: 16px 0 6px; }
+
+#header { background: #23395b; color: #fff; padding: 8px 16px; overflow: hidden; }
+#header .brand { float: left; font-size: 18px; font-weight: bold; }
+#header .brand a { color: #fff; text-decoration: none; }
+#header .userbox { float: right; }
+#header .userbox button.link { color: #cde; }
+
+#menu { background: #3c5a85; }
+#menu ul { list-style: none; margin: 0; padding: 0 8px; overflow: hidden; }
+#menu li { float: left; }
+#menu a { display: block; padding: 8px 12px; color: #fff; text-decoration: none; }
+#menu a:hover, #menu a.active { background: #5677a8; }
+
+#content { background: #fff; margin: 12px; padding: 16px; border: 1px solid #ccc; min-height: 400px; }
+#footer { text-align: center; font-size: 11px; color: #777; padding: 8px; }
+
+.page-head { overflow: hidden; }
+.page-head h1 { float: left; }
+.page-head .button, .page-head .buttons { float: right; }
+
+.message { padding: 8px 12px; margin-bottom: 12px; border: 1px solid; }
+.message.success { background: #e6f4e6; border-color: #8c8; }
+.message.error { background: #fbe9e9; border-color: #d88; color: #900; }
+.message.warning { background: #fff7e0; border-color: #e0c060; }
+
+table.grid { border-collapse: collapse; width: 100%; margin-bottom: 12px; }
+table.grid th, table.grid td { border: 1px solid #ddd; padding: 5px 7px; text-align: left; vertical-align: top; }
+table.grid thead th { background: #eef1f6; }
+table.grid tbody tr:nth-child(even) { background: #fafafa; }
+table.grid tr.inactive td { color: #999; }
+table.grid td.empty { text-align: center; color: #888; font-style: italic; }
+table.grid tr.total, table.grid tfoot tr { font-weight: bold; background: #eef1f6; }
+.num { text-align: right !important; white-space: nowrap; }
+.sub { font-size: 11px; color: #777; }
+
+table.details { border-collapse: collapse; margin-bottom: 12px; }
+table.details th { text-align: left; padding: 4px 16px 4px 0; color: #555; font-weight: normal; width: 160px; }
+table.details td { padding: 4px 0; }
+
+.form fieldset { border: 1px solid #ddd; margin: 0 0 12px; padding: 8px 12px; }
+.form legend { font-weight: bold; }
+.field { margin-bottom: 10px; }
+.field label, .field .label { display: block; font-weight: bold; margin-bottom: 2px; }
+.field label.radio, .field label.checkbox { display: inline; font-weight: normal; margin-right: 12px; }
+.field input[type=text], .field input[type=email], .field input[type=password], .field select { width: 280px; padding: 3px; }
+.has-error input, .has-error select { border: 1px solid #c00; background: #fff4f4; }
+.field-error { color: #c00; font-size: 12px; display: block; }
+.form.compact .field { display: inline-block; margin-right: 12px; vertical-align: top; }
+.form.compact .field input { width: 140px; }
+.actions { margin: 12px 0; }
+.hint { color: #777; font-size: 12px; }
+.sr-only { position: absolute; left: -9999px; }
+
+button, .button { display: inline-block; padding: 4px 12px; border: 1px solid #999; background: #f0f0f0; color: #222;
+    text-decoration: none; cursor: pointer; font: inherit; border-radius: 2px; }
+button.primary, .button.primary { background: #2f6db5; border-color: #235a99; color: #fff; }
+button.danger { background: #c9302c; border-color: #a52925; color: #fff; }
+button.link { border: 0; background: none; color: #1a5a96; padding: 0; text-decoration: underline; }
+button.link.danger { color: #c00; }
+form.inline { display: inline; }
+.row-actions a, .row-actions form { margin-right: 8px; }
+
+.filter-bar { background: #f6f7f9; border: 1px solid #ddd; padding: 8px; margin-bottom: 12px; }
+.filter-bar label { margin: 0 4px 0 8px; }
+.pager { margin: 8px 0; }
+.pager a, .pager span { margin-right: 10px; }
+.pager-info { color: #666; }
+.subnav { margin-bottom: 12px; border-bottom: 1px solid #ccc; }
+.subnav a { display: inline-block; padding: 4px 10px; text-decoration: none; }
+.subnav a.active { border: 1px solid #ccc; border-bottom: 1px solid #fff; margin-bottom: -1px; background: #fff; }
+
+.status { display: inline-block; padding: 1px 6px; font-size: 11px; border-radius: 3px; background: #ddd; font-weight: normal; }
+.status-active, .status-APPROVED, .status-PAID { background: #d4edda; color: #155724; }
+.status-inactive, .status-REJECTED { background: #f8d7da; color: #721c24; }
+.status-SUBMITTED, .status-CALCULATED { background: #fff3cd; color: #856404; }
+.status-DRAFT { background: #e2e3e5; color: #383d41; }
+.role { font-size: 10px; padding: 1px 4px; background: #6b86b0; color: #fff; border-radius: 2px; }
+.locked { font-size: 12px; color: #555; font-weight: normal; }
+
+.cards { overflow: hidden; margin-bottom: 16px; }
+.card { float: left; width: 200px; margin-right: 12px; padding: 12px; border: 1px solid #ddd; background: #f9fafc; }
+.card-label { color: #666; font-size: 12px; }
+.card-value { font-size: 22px; font-weight: bold; margin-top: 4px; }
+.card-sub { font-size: 11px; color: #888; }
+.two-col > div { float: left; width: 48%; margin-right: 2%; }
+.two-col { overflow: hidden; }
+table.chart { width: 100%; border-collapse: collapse; }
+table.chart th { text-align: left; width: 110px; font-weight: normal; padding: 3px 0; }
+table.chart td { padding: 3px 4px; }
+table.chart .bar { height: 14px; background: #4a7cc0; min-width: 2px; }
+
+table.hours td input { width: 50px; text-align: right; }
+table.payslip { border-collapse: collapse; min-width: 420px; margin-bottom: 12px; }
+table.payslip th { text-align: left; font-weight: normal; padding: 4px 24px 4px 0; }
+table.payslip td { padding: 4px 0; }
+table.payslip tr.section th { font-weight: bold; padding-top: 12px; border-bottom: 1px solid #ccc; }
+table.payslip tr.total th, table.payslip tr.total td { font-weight: bold; border-top: 2px solid #333; }
+
+.login-box { width: 360px; margin: 40px auto; }
+.login-box .field input { width: 340px; }
