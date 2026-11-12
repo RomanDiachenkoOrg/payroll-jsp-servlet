@@ -1,0 +1,21 @@
+# Maven
+target/
+
+# Local H2 database and logs
+data/
+logs/
+*.mv.db
+*.trace.db
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
